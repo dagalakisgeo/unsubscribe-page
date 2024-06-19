@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsubscribe from Emails</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .unsubscribe-container {
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+        .unsubscribe-container h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333333;
+        }
+        .unsubscribe-container p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #555555;
+        }
+        .unsubscribe-container input[type="email"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+        }
+        .unsubscribe-container button {
+            background-color: #dc3545;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .unsubscribe-container button:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <div class="unsubscribe-container">
+        <h1>Unsubscribe</h1>
+        <p>We're sorry to see you go. Please enter your email address to unsubscribe from our mailing list.</p>
+        <form action="YOUR_UNSUBSCRIBE_ENDPOINT" method="POST">
+            <input type="email" name="email" placeholder="Your email address" required>
+            <button type="submit">Unsubscribe</button>
+        </form>
+    </div>
+</body>
+</html>
